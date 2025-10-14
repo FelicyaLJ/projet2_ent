@@ -1,0 +1,39 @@
+Requete find via mongosh
+
+=====================================================================================================================
+Username :
+damoursjeremie_db_user
+
+Pass :
+mTDTE04xFuSuZl9M
+
+=====================================================================================================================
+Se placer dans le bin du dossier mongosh, dans mon cas :
+
+cd "C:\Users\damou\OneDrive\Bureau\Session 5\Exploration\Projet2\mongosh-2.5.8-win32-x64\bin"
+
+=====================================================================================================================
+Pour se connecter à la mongoDB, dans mon cas : 
+
+.\mongosh "mongodb+srv://projet2.wlw3tln.mongodb.net/db?appName=mongosh" `
+  --username "damoursjeremie_db_user" --apiVersion 1
+
+=====================================================================================================================
+
+Entrer le mot de passe suivant : 
+
+mTDTE04xFuSuZl9M
+
+
+=====================================================================================================================
+Entrer les commande FIND dans le terminal :
+
+db.item_runescape.find({ "metadata/value": { $gt: 2000000 } }).pretty()
+
+db.item_runescape.find().limit(5)
+
+db.item_runescape.find({ name: "3rd age amulet" })
+
+
+
+
