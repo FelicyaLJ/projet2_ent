@@ -1,0 +1,18 @@
+IMPORTATION CSV VIA MONGODB SHELL
+=====================================================================================================================
+Username :
+damoursjeremie_db_user
+
+Pass :
+mTDTE04xFuSuZl9M
+
+======================================================================================================================
+Commande utiliser pour import le CVS dans MONGO via le terminal:
+
+Se placer dans le dossier bin : 
+C:\Users\damou\OneDrive\Bureau\Session 5\Exploration\Projet2\mongodb-database-tools-windows-x86_64-100.13.0\bin
+======================================================================================================================
+Commande dans le terminal :
+
+.\mongoimport --uri mongodb+srv://damoursjeremie_db_user:mTDTE04xFuSuZl9M@projet2.wlw3tln.mongodb.net/db --collection item_runescape --type csv --headerline --file "..\..\osrs_prices.csv"
+=======================================================================================================================
