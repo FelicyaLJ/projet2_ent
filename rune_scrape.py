@@ -36,24 +36,18 @@ def build_price_catalog():
     for item in mapping:
         item_id = item["id"]
         name = item["name"]
-        # get price data for this item
         price_info = latest.get(str(item_id))
-        # optionally get timeseries
-        # timeseries = fetch_timeseries(item_id)
         entry = {
             "id": item_id,
             "name": name,
             "metadata": item,
             "price": price_info,
-            # "timeseries": timeseries
         }
         catalog.append(entry)
-        #time.sleep(0.2)  # small delay to be polite
     return catalog
 
 if __name__ == "__main__":
     catalog = build_price_catalog()
-    # e.g. save to JSON
     import json
     with open("osrs_prices.json", "w", encoding="utf-8") as f:
         json.dump(catalog, f, indent=2)
