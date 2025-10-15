@@ -56,8 +56,6 @@ def build_price_catalog():
 
         entry = {
             "id": item_id,
-            "name": name,
-            "examine": examine,
             "metadata": item,
             "price": price_info,
             "roi": roi,
