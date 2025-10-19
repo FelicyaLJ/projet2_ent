@@ -1,3 +1,6 @@
+#user: 202379631_db_user
+#password: xu2yjq6M94W9zrrv
+
 import json
 import csv
 from pymongo import MongoClient
